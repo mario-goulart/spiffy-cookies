@@ -1,0 +1,9 @@
+;;; spiffy-cookies.setup -*- scheme -*-
+
+(compile -s -O2 -d1 -j spiffy-cookies spiffy-cookies.scm)
+(compile -s -O2 -d1 spiffy-cookies.import.scm)
+
+(install-extension 'spiffy-cookies
+                   '("spiffy-cookies.so" "spiffy-cookies.import.so")
+                   '((version "1.0")))
+
