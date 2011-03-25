@@ -6,4 +6,4 @@
  (license "BSD")
  (category web)
  (depends spiffy intarweb)
- (files "spiffy-cookies.scm" "spiffy-cookies.setup" "spiffy-cookies.html"))
+ (files "spiffy-cookies.meta" "spiffy-cookies.setup" "spiffy-cookies.scm"))
