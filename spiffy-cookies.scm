@@ -4,7 +4,7 @@
 (import chicken scheme data-structures)
 (use intarweb spiffy)
 
-(define (set-cookie! name value #!key comment max-age domain path secure)
+(define (set-cookie! name value #!key comment max-age domain path secure expires http-only)
   (update-header-contents!
    'set-cookie
    (list
@@ -15,6 +15,8 @@
        (domain  . ,domain)
        (path    . ,path)
        (secure  . ,secure)
+       (expires . ,expires)
+       (HttpOnly . ,http-only)
        (version . 1))))
    (response-headers (current-response))))
 
