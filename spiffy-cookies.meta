@@ -2,8 +2,7 @@
 
 ((egg "spiffy-cookies.egg")
  (synopsis "Procedures for managing cookies")
- (author "<a href=\"http://wiki.call-cc.org/users/mario-domenech-goulart\">Mario Domenech Goulart</a>")
+ (author "Mario Domenech Goulart")
  (license "BSD")
  (category web)
- (depends spiffy intarweb)
- (files "spiffy-cookies.meta" "spiffy-cookies.setup" "spiffy-cookies.scm" "spiffy-cookies.release-info"))
+ (depends spiffy intarweb))
