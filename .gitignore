@@ -1,0 +1,7 @@
+spiffy-cookies.build.sh
+spiffy-cookies.import.scm
+spiffy-cookies.import.so
+spiffy-cookies.install.sh
+spiffy-cookies.link
+spiffy-cookies.so
+spiffy-cookies.static.o
