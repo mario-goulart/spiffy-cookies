@@ -1,8 +1,17 @@
 (module spiffy-cookies
   (set-cookie! delete-cookie! read-cookie)
 
-(import chicken scheme data-structures)
-(use intarweb spiffy)
+(import scheme)
+(cond-expand
+  (chicken-4
+   (import chicken data-structures)
+   (use intarweb spiffy))
+  (chicken-5
+   (import (chicken base)
+           (chicken string))
+   (import intarweb spiffy))
+  (else (error "Unsupported CHICKEN version.")))
+
 
 (define (set-cookie! name value #!key comment max-age domain path secure expires http-only)
   (update-header-contents!

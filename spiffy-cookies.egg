@@ -1,0 +1,9 @@
+;;; spiffy-cookies.egg -*- scheme -*-
+((synopsis "Procedures for managing cookies")
+ (author "Mario Domenech Goulart")
+ (license "BSD")
+ (category web)
+ (dependencies spiffy intarweb)
+ (component-options
+  (csc-options "-O3" "-d1"))
+ (components (extension spiffy-cookies)))
