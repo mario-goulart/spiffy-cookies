@@ -6,10 +6,11 @@
   (chicken-4
    (import chicken data-structures)
    (use intarweb spiffy))
-  (chicken-5
+  ((or chicken-5 chicken-6)
    (import (chicken base)
            (chicken string))
-   (import intarweb spiffy))
+   (import intarweb spiffy)
+   (cond-expand (chicken-6 (import (scheme base))) (else)))
   (else (error "Unsupported CHICKEN version.")))
 
 
